@@ -14,18 +14,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <header className="site-header">
-          <Link href="/" className="logo">
+      <body className="bg-bg font-sans leading-[1.6] text-fg">
+        <header className="mx-auto flex max-w-[900px] items-center justify-between gap-4 border-b border-border px-6 py-5">
+          <Link href="/" className="text-lg font-bold text-fg hover:underline">
             Directory
           </Link>
           <nav>
-            <Link href="/">Listings</Link>
+            <Link href="/" className="text-accent hover:underline">
+              Listings
+            </Link>
           </nav>
         </header>
-        <main className="container">{children}</main>
-        <footer className="site-footer">
-          <p>&copy; {new Date().getFullYear()} Directory Site</p>
+        <main className="mx-auto max-w-[900px] px-6 pt-8 pb-16">{children}</main>
+        <footer className="mx-auto max-w-[900px] border-t border-border p-6 text-sm text-muted">
+          <p className="my-[1em]">
+            &copy; {new Date().getFullYear()} Directory Site
+          </p>
         </footer>
       </body>
     </html>

@@ -31,6 +31,45 @@ export const listings: Listing[] = [
     location: "Asheville, NC",
     description: "Drop-in vinyasa and restorative classes seven days a week.",
   },
+  {
+    slug: "gilded-page-books",
+    name: "Gilded Page Books",
+    category: "Retail",
+    location: "Providence, RI",
+    description: "Used and rare books, with a standing poetry night on Thursdays.",
+    website: "https://example.com",
+  },
+  {
+    slug: "sunset-auto-works",
+    name: "Sunset Auto Works",
+    category: "Automotive",
+    location: "Tucson, AZ",
+    description: "Independent repair shop specializing in older imports.",
+    website: "https://example.com",
+  },
+  {
+    slug: "marisol-taqueria",
+    name: "Marisol Taquería",
+    category: "Restaurant",
+    location: "San Diego, CA",
+    description: "Family-run taquería serving Baja-style seafood since 1994.",
+    website: "https://example.com",
+  },
+  {
+    slug: "beacon-hill-dental",
+    name: "Beacon Hill Dental",
+    category: "Health",
+    location: "Boston, MA",
+    description: "General and cosmetic dentistry, accepting new patients.",
+    website: "https://example.com",
+  },
+  {
+    slug: "copper-creek-landscaping",
+    name: "Copper Creek Landscaping",
+    category: "Home Services",
+    location: "Boise, ID",
+    description: "Design, installation, and seasonal maintenance for dry climates.",
+  },
 ];
 
 export function getListing(slug: string): Listing | undefined {

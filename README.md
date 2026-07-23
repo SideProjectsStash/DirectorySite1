@@ -1,7 +1,8 @@
 # Directory Site
 
 A bare-bones [Next.js](https://nextjs.org) directory website — a browsable list of
-listings with an individual page for each one. Intentionally minimal; meant as a
+listings with an individual page for each one. Styled with
+[Tailwind CSS](https://tailwindcss.com) v4. Intentionally minimal; meant as a
 starting point to build on.
 
 ## Getting started
@@ -20,10 +21,18 @@ app/
   layout.tsx              # Shared header/footer shell
   page.tsx                # Home — grid of all listings
   listings/[slug]/page.tsx # Individual listing page
-  globals.css             # All styling (plain CSS, no framework)
+  globals.css             # Tailwind import + design tokens (@theme)
 lib/
   listings.ts             # Placeholder data + helpers
+postcss.config.mjs        # Wires up the Tailwind PostCSS plugin
 ```
+
+## Styling
+
+Styles are Tailwind utility classes applied inline. Colors and the font stack
+live as tokens in the `@theme` block in [app/globals.css](app/globals.css) —
+`--color-accent` there generates `text-accent`, `border-accent`, `bg-accent`,
+etc., so changing a brand color is a one-line edit.
 
 ## Adding a listing
 
